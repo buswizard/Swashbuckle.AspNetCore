@@ -203,5 +203,11 @@ namespace Swashbuckle.AspNetCore.SwaggerUI
         /// (Authorization header with Basic base64encode(client_id + client_secret))
         /// </summary>
         public bool UseBasicAuthenticationWithAccessCodeGrant { get; set; } = false;
+        
+        /// <summary>
+        /// Added RW - 2019-11-19
+        /// Only valid for the authorizationCode flow.
+        /// </summary>
+        public bool UsePkceWithAuthorizationCodeGrant { get; set; } = false;
     }
 }
